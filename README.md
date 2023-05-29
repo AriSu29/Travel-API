@@ -1,40 +1,66 @@
 # Travel-API
 Tugas PESILAT Alkademi - Memperbaiki Source Code dan Membuat Travel API
-# Dokumentasi API
 
-End point Travel API.
+# API Documentation
 
-### Registrasi Pengguna
-**URL**: `/api/auth/signup`
+## User Registration
 
-**Metode**: POST
+**Endpoint:** `/api/auth/signup`
 
-**Deskripsi**: Endpoint ini digunakan untuk melakukan registrasi pengguna baru.
+**Method:** `POST`
 
-### Masuk Pengguna
-**URL**: `/api/auth/signin`
+**Body:**
+- `nama`: Nama pengguna (string)
+- `email`: Alamat email pengguna (string)
+- `phone_number`: Nomor telepon pengguna (string)
+- `password`: Kata sandi pengguna (string)
 
-**Metode**: POST
+**Header:** None
 
-**Deskripsi**: Endpoint ini digunakan untuk melakukan masuk (login) pengguna.
+## User Login
 
-### Daftar Destinasi
-**URL**: `/api/users/destination/list`
+**Endpoint:** `/api/auth/signin`
 
-**Metode**: GET
+**Method:** `POST`
 
-**Deskripsi**: Endpoint ini digunakan untuk mendapatkan daftar destinasi.
+**Body:**
+- `email`: Alamat email pengguna (string)
+- `password`: Kata sandi pengguna (string)
 
-### Pesan Tiket
-**URL**: `/api/users/ticket/order`
+**Header:** None
 
-**Metode**: POST
+## Get Destination List
 
-**Deskripsi**: Endpoint ini digunakan untuk memesan tiket.
+**Endpoint:** `/api/users/destination/list`
 
-### Daftar Tiket yang Dibeli
-**URL**: `/api/users/myticket`
+**Method:** `GET`
 
-**Metode**: GET
+**Body:** None
 
-**Deskripsi**: Endpoint ini digunakan untuk mendapatkan daftar tiket yang telah dibeli oleh pengguna.
+**Header:**
+- `Authorization`: JWT token
+
+## Order Ticket
+
+**Endpoint:** `/api/users/ticket/order`
+
+**Method:** `POST`
+
+**Body:**
+- `destination`: Tujuan destinasi (string)
+
+**Header:**
+- `Authorization`: JWT token
+
+## Get Ticket List
+
+**Endpoint:** `/api/users/myticket`
+
+**Method:** `GET`
+
+**Body:**
+- `nama`: Nama pengguna (string)
+
+**Header:**
+- `Authorization`: JWT token
+
