@@ -2,14 +2,14 @@
 Tugas PESILAT Alkademi - Memperbaiki Source Code dan Membuat Travel API
 # Dokumentasi API
 
-Berikut adalah dokumentasi API untuk layanan Travel API.
-
-## Daftar Endpoint API
+End point Travel API.
 
 ### Registrasi Pengguna
 
 **URL**: `/api/auth/signup`
+
 **Metode**: POST
+
 **Deskripsi**: Endpoint ini digunakan untuk melakukan registrasi pengguna baru.
 
 ### Masuk Pengguna
