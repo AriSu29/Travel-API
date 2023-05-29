@@ -62,5 +62,5 @@ Tugas PESILAT Alkademi - Memperbaiki Source Code dan Membuat Travel API
 **Header:**
 - `Authorization`: JWT token
 
-##MODEL
+## MODEL
 ![Model Diagram](models.png)
