@@ -1,6 +1,5 @@
 # Travel-API
-Tugas PESILAT Alkademi - Memperbaiki Source Code dan Membuat Travel API
-----------------------------------------------------------------------------
+
 ## User Registration
 
 **Endpoint:** `/api/auth/signup`
